@@ -15,15 +15,23 @@ To ensure that the user is the right on when the application start. When user st
 The required fingerprint is the one save on the phone. If the user doesn't have digital sensor, doesn't have saved fingerprints or don't want to authenticate with fingerprint, he can enter a secure password. The password is an Base64 encode String. Here the required password is "aGVsbG8=" which can be decode to "hello". This password is stored in an c++ code file in the folder "cpp". Hackers can't use reverse engeneering to obtain this password because c++ cannot be decompiled.
 This pasword has been given by the bank to the user.
 
+![Alt text](https://github.com/Freshm4at/AccountSecure/blob/main/Screenshoots/fingerprint.jpg)
+![Alt text](https://github.com/Freshm4at/AccountSecure/blob/main/Screenshoots/invalid%20fingerprint.jpg)
+![Alt text](https://github.com/Freshm4at/AccountSecure/blob/main/Screenshoots/Wrong%20password.jpg)
+
 ### Internal data
 
 Application must be available offline. If you try to login when you're offline, application takes internal data to display last know account's informations. So internal data must be secure and encrypted in the case of a hacker decompile the application. data has been stored in a text file for each account and are used when you are offline.
 Data has been encrypted with the SHA256 algorithm and saved in the dedicated txt file. The SHA256 requires a master key, generate with a secret key. The secret key is the user password stored in the c++ file. Hackers don't have access to the secret key, so they can't generate master key and decode data.
 The application decode data with the generated master key to display offline data.
 
+![Alt text](https://github.com/Freshm4at/AccountSecure/blob/main/Screenshoots/Offline%20information.jpg)
+
 ### External data
 
 Application calls an API to get account's information whan the user is online. The connection with the API must be secure and data can't be transfer clearly on the network. To encrypt online data, i used a TLS connection and only accept the API certification.
+
+![Alt text](https://github.com/Freshm4at/AccountSecure/blob/main/Screenshoots/Online%20information.jpg)
 
 ### URL
 
