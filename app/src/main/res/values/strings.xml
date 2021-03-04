@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">AccountSecure</string>
+    <!-- Strings used for fragments for navigation -->
+
+    <string name="welcome_to_your_bank">Welcome to your bank</string>
+    <string name="id">Id</string>
+    <string name="login">Login</string>
+    <string name="your_different_accounts">Your different accounts :</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="portail">portail</string>
+    <string name="meme">meme</string>
+    <string name="or_click_on_the_dark_portal">or click on the dark portal</string>
+    <string name="refresh">Refresh</string>
+    <string name="password">Password</string>
+    <string name="enter_account_s_id">Enter account\'s id :</string>
+    <string name="bank_name">Bank name :</string>
+    <string name="amount">Amount :</string>
+    <string name="iban">Iban :</string>
+    <string name="account">account :</string>
+    <string name="customer">Customer :</string>
+    <string name="quantity_and_price">Quantity and price :</string>
+    <string name="note">Note :</string>
+    <string name="username">Username :</string>
+</resources>
