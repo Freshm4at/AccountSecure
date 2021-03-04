@@ -2,7 +2,6 @@
 Android application. Simulation of a bank account application with multiple security implementations
 
 ![Alt text](https://github.com/Freshm4at/AccountSecure/blob/main/Screenshoots/login_page.jpg)
-![Screenshoots](login_page.jpg)
 
 ## Introduction
 This application is an example of a secure bank application.  It integrate some security implementation as secure TLS communication with an API, SHA256 encrytation and C++ code for secret key and URL API. Moreover, this application must be available offline. Users data can be found online on the API and offline in an assets folder. External datas are encrypted with TLS and Internal datas are encrypted with SHA256.
