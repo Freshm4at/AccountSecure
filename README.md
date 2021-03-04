@@ -1,7 +1,7 @@
 # AccountSecure
 Android application. Simulation of a bank account application with multiple security implementations
 
-![Alt text](Desktop\Screenshot_20210304-161511.jpg?raw=true "Title")
+![Alt text](https://github.com/Freshm4at/AccountSecure/blob/main/Screenshoots/login_page.jpg)
 ![Screenshoots](login_page.jpg)
 
 ## Introduction
